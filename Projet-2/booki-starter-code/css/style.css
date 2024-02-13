@@ -469,23 +469,31 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* header */
+ 
     header {
-        flex-direction: column;
-        
+        display: flex;
+        flex-direction: column;   
       }
     
       .logo {
         padding-top: 30px;
         position: static;
+        align-items: center;
+
       }
       
       .nav {
         border-bottom: 2px solid var(--main-bg-color);
+        align-items: center;
       }
+
+
+
 
  /* filtres */
 
 .filtres {
+    display: flex;
     flex-wrap: wrap;
   }
 
@@ -512,9 +520,15 @@ a {
 
   .hebergements {
     background-color: white;
-    height: 1px;
-    
+
   }
+
+  .populaires {
+    display: flex;
+    flex-direction: column;
+  }
+
+
 
 
   .populaires-cards {
@@ -547,6 +561,8 @@ a {
     flex-direction: column;
     align-items: center;
 }
+
+
 
     /* footer */
 
