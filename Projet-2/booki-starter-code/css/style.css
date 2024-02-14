@@ -492,9 +492,9 @@ a {
       }
 
     .logo {
-        width: 121px;
-        height: 79px;
-        padding: 30px;
+        width: 61px;
+        height: 19px;
+        padding: 20px;
         gap: 10px;
       }
 
@@ -504,6 +504,7 @@ a {
         gap: 15px;
         width: 100%;
         position: static;
+        font-size: 19px;
       }
     
     nav ul {
@@ -529,15 +530,18 @@ a {
         display: block;
         border-bottom: 2px solid var(--main-color);
         border-top: none;
-        padding-bottom: 13px;
-
+        padding-bottom: 35px;
     }
 
+    .nav a:hover{
+        border-top: none;
+    }
+    
     .infogroup {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-top: 70px;
+        padding-top: 25px;
         line-height: 0px;
         text-align: center;
         width: 375px;
@@ -552,19 +556,21 @@ a {
         height: 79px;
         gap: 8px;
         text-align: left;
-
+        padding-bottom: 20px;
     }
 
-    .infogroup .searchbar {
-        width: 335px;
-        height: 49px;
+    .infogroup .search-bar {
+        width: 100%;
+        border: 1px solid var(--main-bg-color);
+        border-radius: 30px;
     }
 
-    .infogroup .input {
-        
+    .infogroup input {
+        width: 285px;
+        border: none;
     }
 
-    .button {
+    .infogroup .search-bar .button {
         border-radius: 15px;
         width: 49px;
         height: 49px;
@@ -588,22 +594,27 @@ a {
     .filtres {
         flex-wrap: wrap;
         margin-top: 0px;
+        text-align: left;
+        width: 100%;
+        gap: 20px;
     }
 
     .filtres_title {
         display: block;
         width: 335px;
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 10px;
     }
 
     .filtre {
-        width: 30%;
+        width: 35%;
         font-size: 14px;
     }
 
     .infobar p {
         line-height: 20px;
         text-align: left;
-        width: 301px;
     }
 
 
@@ -613,6 +624,7 @@ a {
 .main {
     display: flex;
     flex-direction: column;
+    height: 2019px;
   }
 
 .hebergements-and-populaires {
@@ -624,17 +636,20 @@ a {
 
   .hebergements-and-populaires section {
     border-radius: 0;
+    background-color: white;
+    width: 100%;
   }
 
-  .hebergements-title {
-    
+  .hebergements-and-populaires .populaires {
+    border-radius: 0;
+    background-color: var(--main-bg-color);
+    width: 100%;
   }
 
   .hebergements {
     width: 375px;
-    height: 1435px;
-    padding: 20px;
-    background-color: white;
+    height: 1525.5px;
+    width: 100%;
   }
 
   .hebergements .hebergements {
@@ -643,42 +658,47 @@ a {
     width: 100%;
   }
 
+  .hebergements-cards {
+    gap: 15px;
+}
+
   .hebergements-cards .card {
     width: 335px;
+    height: 207px;
   }
 
   .hebergements-cards .card img {
     width: 335px;
   }
 
- 
-
   .hebergements .afficher_plus {
-    position: relative;
-    bottom: 0px;
-    top: 20px;
+    margin-top: auto;
+    z-index: 10;
+    
   }
 
-  .populaires {
-    display: flex;
-    flex-direction: column;
-    height: 569px;
-    width: 375px;
-    background-color: var(--main-bg-color);
-  }
 
   .populaires-cards {
     display: flex;
     flex-direction: column;
     width: 100%;
-    width: 335px;
   }
 
   .populaires-cards a {
     width: 100%;
   }
 
+  .populaires .card {
+    width: 100%;
+    margin-top: 15px;
+    height: 146px;
+    width: 335px;
+  }
 
+  .populaires .card img {
+    height: 146px;
+    width: 111px;
+  }
   .main-container {
     padding: 0px;
   }
@@ -692,27 +712,36 @@ a {
     flex-direction: column;
     width: 375px;
     height: 965px;
-    padding: 30px;
-    gap: 30px;
+    margin: 0px;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 60px;
+    align-items: center;
+    
     }
 
-  .activites-title {
-    margin-left: 0;
-    margin-top: 40px;
-}
+    .activites-title {
+        width: 315px;
+    }
 
 .activites-cards-container {
     flex-direction: column;
+    width: 315px;
+    height: 845px;
+    align-items: center;
+
 }
 
 .activites-card {
     width: 315px;
     height: 200px;
+    align-items: center;
 }
 
 .activites-card img {
     width: 315px;
     height: 141px;
+    width: 100%;
 }
 
 
