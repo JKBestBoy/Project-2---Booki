@@ -575,7 +575,9 @@ a {
         gap: 8px;
         text-align: left;
         margin-bottom: 20px;
+        line-height: 24px;
     }
+
 
     .infogroup .search-bar {
         border: 1px solid var(--main-bg-color);
@@ -584,13 +586,13 @@ a {
     }
 
     .infogroup input {
-        width: 350px;
         border: none;
+        padding-left: 0px;
     }
 
     .infogroup .search-bar .button {
         border-radius: 15px;
-        width: 59px;
+        width: 49px;
         height: 49px;
         filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
         position: absolute;
@@ -617,6 +619,7 @@ a {
         margin-top: 20px;
         text-align: left;
         justify-content: center;
+        width: 100%;
     }
 
     .filtres_title {
@@ -630,15 +633,15 @@ a {
     }
 
     .filtre {
-        width: 35%;
-        font-size: 14px;
+        width: 38%;
+        font-size: 13.5px;
         justify-content: center;
     }
 
-    .infobar p {
-        text-align: left;
+    .infobar {
+        align-items: center;
         line-height: 20px;
-        margin-top: 0%;
+        text-align: left;
     }
 
 
@@ -710,7 +713,6 @@ a {
   .populaires .card {
     width: 100%;
     margin-top: 15px;
-    height: 146px;
   }
 
   .populaires .card img {
@@ -763,4 +765,17 @@ a {
         height: 461px;
         padding: 30px;
       }
+}
+
+@media (max-width: 436px) {
+
+    .populaires {
+        margin-top: 180px;
+    }
+
+    .headline {
+        margin-bottom: 60px;
+    }
+
+
 }
